@@ -28,39 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.barraDeCarga = new System.Windows.Forms.ProgressBar();
+            this.reloj = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // button1
+            // barraDeCarga
             // 
-            this.button1.BackgroundImage = global::pryChristensenIE.Properties.Resources.ingresar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(271, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 61);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.barraDeCarga.Location = new System.Drawing.Point(207, 346);
+            this.barraDeCarga.Name = "barraDeCarga";
+            this.barraDeCarga.Size = new System.Drawing.Size(313, 32);
+            this.barraDeCarga.TabIndex = 0;
+            // 
+            // reloj
+            // 
+            this.reloj.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::pryChristensenIE.Properties.Resources.logo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(729, 428);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(729, 437);
+            this.Controls.Add(this.barraDeCarga);
             this.DoubleBuffered = true;
             this.Name = "frmInicio";
             this.Text = "Boston Seguros";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar barraDeCarga;
+        private System.Windows.Forms.Timer reloj;
     }
 }
 
