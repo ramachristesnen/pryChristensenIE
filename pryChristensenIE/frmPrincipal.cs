@@ -24,5 +24,11 @@ namespace pryChristensenIE
             frmRegistroDeProveedores registroDeProveedores = new frmRegistroDeProveedores();        
             registroDeProveedores.ShowDialog();
         }
+
+        private void archivoDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArchivoDeProveedores archivoDeProveedores = new frmArchivoDeProveedores();       
+            archivoDeProveedores.ShowDialog();
+        }
     }
 }

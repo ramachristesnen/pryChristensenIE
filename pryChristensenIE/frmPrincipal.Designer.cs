@@ -66,6 +66,7 @@
             this.archivoDeProveedoresToolStripMenuItem.Name = "archivoDeProveedoresToolStripMenuItem";
             this.archivoDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.archivoDeProveedoresToolStripMenuItem.Text = "Archivo de Proveedores";
+            this.archivoDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.archivoDeProveedoresToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
