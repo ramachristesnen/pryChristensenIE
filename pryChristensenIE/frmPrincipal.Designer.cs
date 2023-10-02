@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.archivoDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // gestionToolStripMenuItem
             // 
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroDeProveedoresToolStripMenuItem});
+            this.registroDeProveedoresToolStripMenuItem,
+            this.archivoDeProveedoresToolStripMenuItem});
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.gestionToolStripMenuItem.Text = "Gestion";
@@ -58,6 +60,12 @@
             this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.registroDeProveedoresToolStripMenuItem.Text = "Registro de Proveedores";
             this.registroDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.registroDeProveedoresToolStripMenuItem_Click);
+            // 
+            // archivoDeProveedoresToolStripMenuItem
+            // 
+            this.archivoDeProveedoresToolStripMenuItem.Name = "archivoDeProveedoresToolStripMenuItem";
+            this.archivoDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.archivoDeProveedoresToolStripMenuItem.Text = "Archivo de Proveedores";
             // 
             // frmPrincipal
             // 
@@ -81,5 +89,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gestionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem archivoDeProveedoresToolStripMenuItem;
     }
 }

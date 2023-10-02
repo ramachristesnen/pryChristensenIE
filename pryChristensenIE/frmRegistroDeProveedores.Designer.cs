@@ -46,71 +46,80 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(30, 44);
+            this.txtNumero.Location = new System.Drawing.Point(43, 85);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero.Size = new System.Drawing.Size(103, 20);
             this.txtNumero.TabIndex = 20;
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(681, 151);
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.Location = new System.Drawing.Point(389, 148);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
+            this.btnGrabar.Size = new System.Drawing.Size(117, 23);
             this.btnGrabar.TabIndex = 19;
-            this.btnGrabar.Text = "grabar";
+            this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtLiquidador
             // 
-            this.txtLiquidador.Location = new System.Drawing.Point(671, 85);
+            this.txtLiquidador.Location = new System.Drawing.Point(788, 85);
             this.txtLiquidador.Name = "txtLiquidador";
-            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
+            this.txtLiquidador.Size = new System.Drawing.Size(98, 20);
             this.txtLiquidador.TabIndex = 18;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(560, 85);
+            this.txtDireccion.Location = new System.Drawing.Point(682, 85);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
             this.txtDireccion.TabIndex = 17;
             // 
             // txtJurisdiccion
             // 
-            this.txtJurisdiccion.Location = new System.Drawing.Point(454, 85);
+            this.txtJurisdiccion.Location = new System.Drawing.Point(576, 85);
             this.txtJurisdiccion.Name = "txtJurisdiccion";
             this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
             this.txtJurisdiccion.TabIndex = 16;
             // 
             // txtApertura
             // 
-            this.txtApertura.Location = new System.Drawing.Point(136, 85);
+            this.txtApertura.Location = new System.Drawing.Point(258, 85);
             this.txtApertura.Name = "txtApertura";
             this.txtApertura.Size = new System.Drawing.Size(100, 20);
             this.txtApertura.TabIndex = 15;
             // 
             // txtEntidad
             // 
-            this.txtEntidad.Location = new System.Drawing.Point(30, 85);
+            this.txtEntidad.Location = new System.Drawing.Point(152, 85);
             this.txtEntidad.Name = "txtEntidad";
             this.txtEntidad.Size = new System.Drawing.Size(100, 20);
             this.txtEntidad.TabIndex = 14;
             // 
             // txtExpediente
             // 
-            this.txtExpediente.Location = new System.Drawing.Point(242, 85);
+            this.txtExpediente.Location = new System.Drawing.Point(364, 85);
             this.txtExpediente.Name = "txtExpediente";
             this.txtExpediente.Size = new System.Drawing.Size(100, 20);
             this.txtExpediente.TabIndex = 13;
             // 
             // txtJuzg
             // 
-            this.txtJuzg.Location = new System.Drawing.Point(348, 85);
+            this.txtJuzg.Location = new System.Drawing.Point(470, 85);
             this.txtJuzg.Name = "txtJuzg";
             this.txtJuzg.Size = new System.Drawing.Size(100, 20);
             this.txtJuzg.TabIndex = 12;
@@ -127,10 +136,10 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dgvDatos.Location = new System.Drawing.Point(30, 206);
+            this.dgvDatos.Location = new System.Drawing.Point(43, 204);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatos.Size = new System.Drawing.Size(741, 200);
+            this.dgvDatos.Size = new System.Drawing.Size(843, 200);
             this.dgvDatos.TabIndex = 11;
             this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
             // 
@@ -174,11 +183,92 @@
             this.Column7.HeaderText = "Liquidador responsable";
             this.Column7.Name = "Column7";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(40, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 16);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Numero";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(149, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 16);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Entidad";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(258, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 16);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Apertura";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(364, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 16);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "N*Expediente";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(467, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 16);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Juzg";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(573, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 16);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Jurisdiccion";
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(679, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 16);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Direccion";
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(785, 45);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 37);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Liquidador Responsable";
+            // 
             // frmRegistroDeProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(915, 448);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtLiquidador);
@@ -218,5 +308,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

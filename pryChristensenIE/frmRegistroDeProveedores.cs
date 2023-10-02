@@ -71,5 +71,18 @@ namespace pryChristensenIE
 
             MessageBox.Show("Registro realizado");
         }
+        private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+
+            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtExpediente.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
+            txtLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
+        }
     }
 }
