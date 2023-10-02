@@ -17,22 +17,12 @@ namespace pryChristensenIE
             InitializeComponent();
         }
 
-        private void agregarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmAgregrarProveedores frmAgregrarProveedores = new frmAgregrarProveedores();   
-            frmAgregrarProveedores.ShowDialog();    
-        }
+        
 
-        private void leerArchivosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void registroDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmLeerArchivos frmLeerArchivos = new frmLeerArchivos();    
-            frmLeerArchivos.ShowDialog();   
-        }
-
-        private void escribirArchivosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           frmEscribirArchivos frmEscribirArchivos = new frmEscribirArchivos();     
-           frmEscribirArchivos.ShowDialog();
+            frmRegistroDeProveedores registroDeProveedores = new frmRegistroDeProveedores();        
+            registroDeProveedores.ShowDialog();
         }
     }
 }

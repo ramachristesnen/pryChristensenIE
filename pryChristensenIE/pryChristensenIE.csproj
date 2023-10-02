@@ -46,29 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmEscribirArchivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEscribirArchivos.Designer.cs">
-      <DependentUpon>frmEscribirArchivos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAgregraProveedores .cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAgregraProveedores .Designer.cs">
-      <DependentUpon>frmAgregraProveedores .cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLeerArchivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLeerArchivos.Designer.cs">
-      <DependentUpon>frmLeerArchivos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -76,22 +58,22 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistroDeProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroDeProveedores.Designer.cs">
+      <DependentUpon>frmRegistroDeProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregraProveedores .resx">
-      <DependentUpon>frmAgregraProveedores .cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEscribirArchivos.resx">
-      <DependentUpon>frmEscribirArchivos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLeerArchivos.resx">
-      <DependentUpon>frmLeerArchivos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroDeProveedores.resx">
+      <DependentUpon>frmRegistroDeProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

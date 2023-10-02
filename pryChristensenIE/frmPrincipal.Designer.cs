@@ -30,9 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.leerArchivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.escribirArchivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,33 +47,17 @@
             // gestionToolStripMenuItem
             // 
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarProveedoresToolStripMenuItem,
-            this.leerArchivosToolStripMenuItem,
-            this.escribirArchivosToolStripMenuItem});
+            this.registroDeProveedoresToolStripMenuItem});
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.gestionToolStripMenuItem.Text = "Gestion";
             // 
-            // agregarProveedoresToolStripMenuItem
+            // registroDeProveedoresToolStripMenuItem
             // 
-            this.agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem";
-            this.agregarProveedoresToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.agregarProveedoresToolStripMenuItem.Text = "Agregar Proveedores";
-            this.agregarProveedoresToolStripMenuItem.Click += new System.EventHandler(this.agregarProveedoresToolStripMenuItem_Click);
-            // 
-            // leerArchivosToolStripMenuItem
-            // 
-            this.leerArchivosToolStripMenuItem.Name = "leerArchivosToolStripMenuItem";
-            this.leerArchivosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.leerArchivosToolStripMenuItem.Text = "Leer Archivos";
-            this.leerArchivosToolStripMenuItem.Click += new System.EventHandler(this.leerArchivosToolStripMenuItem_Click);
-            // 
-            // escribirArchivosToolStripMenuItem
-            // 
-            this.escribirArchivosToolStripMenuItem.Name = "escribirArchivosToolStripMenuItem";
-            this.escribirArchivosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.escribirArchivosToolStripMenuItem.Text = "Escribir Archivos";
-            this.escribirArchivosToolStripMenuItem.Click += new System.EventHandler(this.escribirArchivosToolStripMenuItem_Click);
+            this.registroDeProveedoresToolStripMenuItem.Name = "registroDeProveedoresToolStripMenuItem";
+            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.registroDeProveedoresToolStripMenuItem.Text = "Registro de Proveedores";
+            this.registroDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.registroDeProveedoresToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -98,8 +80,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gestionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarProveedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem leerArchivosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem escribirArchivosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeProveedoresToolStripMenuItem;
     }
 }
