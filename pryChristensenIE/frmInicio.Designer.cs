@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.barraDeCarga = new System.Windows.Forms.ProgressBar();
             this.reloj = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             this.ClientSize = new System.Drawing.Size(729, 437);
             this.Controls.Add(this.barraDeCarga);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
             this.Text = "Boston Seguros";
             this.Load += new System.EventHandler(this.frmInicio_Load);

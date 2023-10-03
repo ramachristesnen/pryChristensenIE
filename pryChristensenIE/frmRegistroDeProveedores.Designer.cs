@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroDeProveedores));
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.txtLiquidador = new System.Windows.Forms.TextBox();
@@ -260,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1081, 433);
+            this.ClientSize = new System.Drawing.Size(1081, 421);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -279,6 +280,7 @@
             this.Controls.Add(this.txtExpediente);
             this.Controls.Add(this.txtJuzg);
             this.Controls.Add(this.dgvDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroDeProveedores";
             this.Text = "frmRegistroDeProveedores";
             this.Load += new System.EventHandler(this.frmRegistroDeProveedores_Load);
