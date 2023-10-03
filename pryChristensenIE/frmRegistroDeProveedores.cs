@@ -45,7 +45,7 @@ namespace pryChristensenIE
 
                 separadorTexto = leerLinea.Split(';');
 
-                //lblDatos.Text+=objetoLectorArchivo.ReadLine();
+               
                 dgvDatos.Rows.Add(separadorTexto);
             }
 
