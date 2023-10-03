@@ -28,12 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblContenido = new System.Windows.Forms.Label();
+            this.btnNivel2 = new System.Windows.Forms.Button();
+            this.btnTreeNivel1 = new System.Windows.Forms.Button();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.SuspendLayout();
+            // 
+            // lblContenido
+            // 
+            this.lblContenido.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblContenido.Location = new System.Drawing.Point(228, 142);
+            this.lblContenido.Name = "lblContenido";
+            this.lblContenido.Size = new System.Drawing.Size(519, 255);
+            this.lblContenido.TabIndex = 8;
+            this.lblContenido.Text = "---";
+            this.lblContenido.Click += new System.EventHandler(this.lblContenido_Click);
+            // 
+            // btnNivel2
+            // 
+            this.btnNivel2.Location = new System.Drawing.Point(3, 39);
+            this.btnNivel2.Name = "btnNivel2";
+            this.btnNivel2.Size = new System.Drawing.Size(191, 75);
+            this.btnNivel2.TabIndex = 7;
+            this.btnNivel2.Text = "Nivel 2 tree";
+            this.btnNivel2.UseVisualStyleBackColor = true;
+            // 
+            // btnTreeNivel1
+            // 
+            this.btnTreeNivel1.Location = new System.Drawing.Point(3, 2);
+            this.btnTreeNivel1.Name = "btnTreeNivel1";
+            this.btnTreeNivel1.Size = new System.Drawing.Size(191, 23);
+            this.btnTreeNivel1.TabIndex = 6;
+            this.btnTreeNivel1.Text = "Nivel 1 tree";
+            this.btnTreeNivel1.UseVisualStyleBackColor = true;
+            this.btnTreeNivel1.Click += new System.EventHandler(this.btnTreeNivel1_Click);
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(3, 120);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(191, 318);
+            this.treeView1.TabIndex = 5;
+            // 
+            // frmArchivoDeProveedores
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmArchivoDeProveedores";
+            this.Controls.Add(this.lblContenido);
+            this.Controls.Add(this.btnNivel2);
+            this.Controls.Add(this.btnTreeNivel1);
+            this.Controls.Add(this.treeView1);
+            this.Name = "frmArchivoDeProveedores";
+            this.Text = "Archivo De Proveedores";
+            this.Load += new System.EventHandler(this.frmArchivoDeProveedores_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblContenido;
+        private System.Windows.Forms.Button btnNivel2;
+        private System.Windows.Forms.Button btnTreeNivel1;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
