@@ -96,6 +96,7 @@
             this.txtJurisdiccion.Name = "txtJurisdiccion";
             this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
             this.txtJurisdiccion.TabIndex = 16;
+            this.txtJurisdiccion.TextChanged += new System.EventHandler(this.txtJurisdiccion_TextChanged);
             // 
             // txtApertura
             // 

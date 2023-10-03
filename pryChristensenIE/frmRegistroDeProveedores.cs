@@ -22,6 +22,7 @@ namespace pryChristensenIE
         public frmRegistroDeProveedores()
         {
             InitializeComponent();
+
         }
 
         private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -70,6 +71,14 @@ namespace pryChristensenIE
             objetoEscribeArchivo.Close();
 
             MessageBox.Show("Registro realizado");
+            txtNumero.Clear();
+            txtEntidad.Clear();
+            txtApertura.Clear();
+            txtExpediente.Clear();
+            txtJuzg.Clear();
+            txtJurisdiccion.Clear();
+            txtDireccion.Clear();
+            txtLiquidador.Clear();
         }
         private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -83,6 +92,11 @@ namespace pryChristensenIE
             txtJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
             txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
             txtLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
+        }
+
+        private void txtJurisdiccion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

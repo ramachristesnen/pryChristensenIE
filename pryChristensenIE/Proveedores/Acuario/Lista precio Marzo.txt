@@ -1,1 +1,15 @@
-sin datos
+acenocumarol 4 mg 20 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 2.812,37
+9 allopurinol 100 mg 30 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 470,65
+10 allopurinol 100 mg 60 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 881,88
+11 allopurinol 300 mg 20 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 1.022,70
+12 allopurinol 300 mg 30 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 1.083,56
+14 allopurinol 300 mg 50 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 1.901,04
+17 amantadina 100 mg 30 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 3.625,94
+19 amiodarona 200 mg 20 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 1.225,71
+20 amiodarona 200 mg 50 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 3.012,94
+24 amlodipina 10 mg 30 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 2.393,31
+25 amlodipina 10 mg 60 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 5.296,35
+28 amlodipina 5 mg 30 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 1.389,28
+29 amlodipina 5 mg 60 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 2.939,95
+32 atenolol 100 mg 30 unidades Comprimidos/Pastillas/Tabletas/Grageas $ 1.407,81
+34 atenolol 100 
