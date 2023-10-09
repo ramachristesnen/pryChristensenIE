@@ -31,13 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroDeProveedores));
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.txtLiquidador = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtJurisdiccion = new System.Windows.Forms.TextBox();
             this.txtApertura = new System.Windows.Forms.TextBox();
             this.txtEntidad = new System.Windows.Forms.TextBox();
             this.txtExpediente = new System.Windows.Forms.TextBox();
-            this.txtJuzg = new System.Windows.Forms.TextBox();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Entidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +52,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.cmbLiquidador = new System.Windows.Forms.ComboBox();
+            this.cmbJurisdiccion = new System.Windows.Forms.ComboBox();
+            this.cmbJuzg = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,55 +76,33 @@
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
-            // txtLiquidador
-            // 
-            this.txtLiquidador.Location = new System.Drawing.Point(95, 330);
-            this.txtLiquidador.Name = "txtLiquidador";
-            this.txtLiquidador.Size = new System.Drawing.Size(98, 20);
-            this.txtLiquidador.TabIndex = 18;
-            // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(95, 283);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(103, 20);
             this.txtDireccion.TabIndex = 17;
-            // 
-            // txtJurisdiccion
-            // 
-            this.txtJurisdiccion.Location = new System.Drawing.Point(95, 240);
-            this.txtJurisdiccion.Name = "txtJurisdiccion";
-            this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
-            this.txtJurisdiccion.TabIndex = 16;
-            this.txtJurisdiccion.TextChanged += new System.EventHandler(this.txtJurisdiccion_TextChanged);
             // 
             // txtApertura
             // 
             this.txtApertura.Location = new System.Drawing.Point(95, 109);
             this.txtApertura.Name = "txtApertura";
-            this.txtApertura.Size = new System.Drawing.Size(100, 20);
+            this.txtApertura.Size = new System.Drawing.Size(103, 20);
             this.txtApertura.TabIndex = 15;
             // 
             // txtEntidad
             // 
             this.txtEntidad.Location = new System.Drawing.Point(95, 66);
             this.txtEntidad.Name = "txtEntidad";
-            this.txtEntidad.Size = new System.Drawing.Size(100, 20);
+            this.txtEntidad.Size = new System.Drawing.Size(103, 20);
             this.txtEntidad.TabIndex = 14;
             // 
             // txtExpediente
             // 
             this.txtExpediente.Location = new System.Drawing.Point(95, 151);
             this.txtExpediente.Name = "txtExpediente";
-            this.txtExpediente.Size = new System.Drawing.Size(100, 20);
+            this.txtExpediente.Size = new System.Drawing.Size(103, 20);
             this.txtExpediente.TabIndex = 13;
-            // 
-            // txtJuzg
-            // 
-            this.txtJuzg.Location = new System.Drawing.Point(95, 198);
-            this.txtJuzg.Name = "txtJuzg";
-            this.txtJuzg.Size = new System.Drawing.Size(100, 20);
-            this.txtJuzg.TabIndex = 12;
             // 
             // dgvDatos
             // 
@@ -257,12 +235,518 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Liquidador Responsable";
             // 
+            // cmbLiquidador
+            // 
+            this.cmbLiquidador.FormattingEnabled = true;
+            this.cmbLiquidador.Items.AddRange(new object[] {
+            "LIQUIDADOR RESPONSABLE",
+            "Dra. María Cristina Ubbriaco",
+            "Sr. Ricardo Crosetto",
+            "Dra. María Alejandra Spagnolo",
+            "Dra. María Cristina Ubbriaco",
+            "Cont. Orlando Marcelo Suarez",
+            "Cont. Orlando Marcelo Suarez",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dr. Martín Riera ",
+            "Dra. Alicia Nilda Sturla",
+            "Cont. Edgardo Gustavo Silva",
+            "Cont. Orlando Marcelo Suarez",
+            "Dr. Oscar Guillermo Carreras",
+            "Dra. Claudia Marcela Pariente",
+            "Cont. Héctor Jorge García",
+            "Dra. Claudia Marcela Pariente",
+            "Dra. María Cristina Ubbriaco",
+            "Cont. Orlando Marcelo Suarez",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dra. Claudia Marcela Pariente",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dra. María Cristina Ubbriaco",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dra. Verónica Ortíz Auger",
+            "Cont. Edgardo Gustavo Silva",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Claudia Marcela Pariente",
+            "Cont. Orlando Marcelo Suarez",
+            "Dra. Claudia Marcela Pariente",
+            "Dra. María Cristina Ubbriaco",
+            "Dr. Oscar Guillermo Carreras",
+            "Dr. Martín Riera ",
+            "Cont. Orlando Marcelo Suarez",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. Andrea Susana Rojas ",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dr. Oscar Guillermo Carreras",
+            "Cont. Héctor Jorge García",
+            "Dr. Domingo Gómez Bisgarra",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Andrea Susana Rojas ",
+            "Cont. Edgardo Gustavo Silva",
+            "Dr. Martín Riera",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. María Cristina Ubbriaco",
+            "Sr. Ricardo Crosetto",
+            "Dr. Luis Petrate Arguello",
+            "Cont. Edgardo Gustavo Silva",
+            "Dr. Domingo Gómez Bisgarra",
+            "Dra. Claudia Marcela Pariente",
+            "Cont. Héctor Jorge García",
+            "Cont. Héctor Jorge García",
+            "Dr. Martín Riera",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dr. Martín Riera ",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Claudia Marcela Pariente",
+            "Cont. Orlando Marcelo Suarez",
+            "Dra. María Cristina Ubbriaco",
+            "Cont. Héctor Jorge García",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dr. Ezequiel Cará",
+            "Dra. Alicia Nilda Sturla",
+            "Dr. Oscar Guillermo Carreras",
+            "Dra. Claudia Marcela Pariente",
+            "Cont. Edgardo Gustavo Silva",
+            "Dra. Andrea Susana Rojas ",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Claudia Marcela Pariente",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Andrea Susana Rojas ",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dr. Ezequiel Cará",
+            "Dr. Luis Petrate Arguello",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. María Alejandra Spagnolo",
+            "Cont. Edgardo Gustavo Silva",
+            "Dr. Carlos Eduardo Sercovich",
+            "Cont. Héctor Jorge García",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dra. Verónica Ortíz Auger",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Claudia Marcela Pariente",
+            "Dr. Oscar Guillermo Carreras",
+            "Dr. Oscar Guillermo Carreras",
+            "Dr. Oscar Guillermo Carreras",
+            "Cont. Edgardo Gustavo Silva",
+            "Cont. Edgardo Gustavo Silva",
+            "Cont. Héctor Jorge García",
+            "Cont. Héctor Jorge García",
+            "Dr. Oscar Guillermo Carreras",
+            "Dr. Ezequiel Cará",
+            "Dr. Oscar Guillermo Carreras",
+            "Dr. Oscar Guillermo Carreras",
+            "Dr. Oscar Guillermo Carreras",
+            "Dra. Andrea Susana Rojas ",
+            "Dr. Luis Petrate Arguello",
+            "Dra. Claudia Marcela Pariente",
+            "Dr. Luis Petrate Arguello",
+            "Cont. Héctor Jorge García",
+            "Dr. Luis Petrate Arguello",
+            "Cont. Orlando Marcelo Suarez",
+            "Dra. Andrea Susana Rojas ",
+            "Dr. Luis Petrate Arguello",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Claudia Marcela Pariente",
+            "Dr. Domingo Gómez Bisgarra",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Gabriela Inés Trapaglia",
+            "Cont. Héctor Jorge García",
+            "Dra. María Cristina Ubbriaco",
+            "Dr. Oscar Guillermo Carreras",
+            "Cont. Roberto Falvo",
+            "Dra. María Cristina Ubbriaco",
+            "Cont. Héctor Jorge García",
+            "Dr. Luis Petrate Arguello",
+            "Dra. María Cristina Ubbriaco",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Claudia Marcela Pariente",
+            "Dr. Luis Petrate Arguello",
+            "Cont. Héctor Jorge García",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dr. Ezequiel Cará",
+            "Dr. Domingo Gómez Bisgarra",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dr. Carlos Eduardo Sercovich",
+            "Dr. Oscar Guillermo Carreras",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. Gabriela Inés Trapaglia",
+            "Dra. María Mendía",
+            "Dr. Ezequiel Cará",
+            "Dra. Alicia Nilda Sturla",
+            "Cont. Roberto Falvo",
+            "Dra. María Cristina Ubbriaco",
+            "Cont. Héctor Jorge García",
+            "Dres. María Mendía y Martín Riera",
+            "Dra. Alicia Nilda Sturla",
+            "Dra. Gabriela Inés Trapaglia",
+            "Cont. Edgardo Gustavo Silva",
+            "Dr. Domingo Gómez Bisgarra",
+            "Dres. María Mendía y Martín Riera",
+            "Dras. Andrea Rojas y Claudia Pariente"});
+            this.cmbLiquidador.Location = new System.Drawing.Point(93, 330);
+            this.cmbLiquidador.Name = "cmbLiquidador";
+            this.cmbLiquidador.Size = new System.Drawing.Size(105, 21);
+            this.cmbLiquidador.TabIndex = 29;
+            this.cmbLiquidador.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // cmbJurisdiccion
+            // 
+            this.cmbJurisdiccion.FormattingEnabled = true;
+            this.cmbJurisdiccion.Items.AddRange(new object[] {
+            "JURISD",
+            "CABA",
+            "Resistencia-Chaco",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Mercedes- Pcia. de Bs. As.",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Río Cuarto-Córdoba",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Salta",
+            "Bahía Blanca-Pcia. de Bs. As.",
+            "CABA",
+            "CABA",
+            "Córdoba",
+            "Lomas de Zamora-Pcia. de Bs. As.",
+            "CABA",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "Lomas de Zamora-Pcia. de Bs. As.",
+            "Rosario-Santa Fe",
+            "CABA",
+            "Chaco",
+            "CABA",
+            "CABA",
+            "Villa María - Córdoba",
+            "CABA",
+            "CABA",
+            "Tandil-Pcia. de Bs. As.",
+            "Tucumán",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Rosario-Santa Fe",
+            "CABA",
+            "Rosario-Santa Fe",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Córdoba",
+            "CABA",
+            "CABA",
+            "Mendoza",
+            "CABA",
+            "CABA",
+            "Córdoba",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Rosario-Santa Fe",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Mendoza",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "La Plata",
+            "Tres Arroyos-Bs.As.",
+            "Tres Arroyos-Bs.As.",
+            "Tres Arroyos-Bs.As.",
+            "T. Lauquen-Bs. As.",
+            "CABA",
+            "Salta",
+            "CABA",
+            "Bahía Blanca-Pcia. de Bs. As.",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Pergamino-Bs. As.",
+            "CABA",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "San Juan",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Rosario-Santa Fe",
+            "Córdoba",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "Venado Tuerto-Santa Fe",
+            "CABA",
+            "Rosario-Santa Fe",
+            "CABA",
+            "CABA",
+            "La Matanza - Pcia. de Bs.As.",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "CABA",
+            "Rafaela - Santa Fe",
+            "CABA",
+            "CABA",
+            "Juzgado es Montevideo 546, piso 7º"});
+            this.cmbJurisdiccion.Location = new System.Drawing.Point(95, 243);
+            this.cmbJurisdiccion.Name = "cmbJurisdiccion";
+            this.cmbJurisdiccion.Size = new System.Drawing.Size(103, 21);
+            this.cmbJurisdiccion.TabIndex = 30;
+            // 
+            // cmbJuzg
+            // 
+            this.cmbJuzg.FormattingEnabled = true;
+            this.cmbJuzg.Items.AddRange(new object[] {
+            "JUZG.",
+            "Comercial N° 2, Secretaría N° 3",
+            "Civil y Comercial, 6ta. Nominación",
+            "Comercial N° 19, Secretaría N° 38",
+            "Comercial N° 16, Secretaría N° 31",
+            "Comercial N° 24, Secretaría N° 47",
+            "Comercial N° 3, Secretaría N° 5",
+            "Comercial N° 8, Secretaría N° 15",
+            "Comercial N° 15, Secretaría N° 30",
+            "Comercial N° 5, Secretaría N° 9",
+            "Civil y Comercial N° 9, sec. N° 8",
+            "Comercial N° 26, Secretaría 52",
+            "Comercial N° 24, Secretaría N° 48",
+            "Comercial N° 1, Secretaría N° 1",
+            "Comercial N° 8, Secretaría N° 15",
+            "Comercial N° 25, Secretaría N° 50",
+            "Comercial N° 5, Secretaría N° 10",
+            "Comercial N° 9, Secretaría N° 18",
+            "Comercial N° 16, Secretaría N° 31",
+            "Comercial N° 4, Secretaría N° 8",
+            "Comercial N° 12, Secretaría N° 24",
+            "Comercial Nº 14, Secretaría N° 28",
+            "Comercial Nº 26 Secretaría N° 51",
+            "Comercial Nº 5, Secretaría N° 10",
+            "Comercial Nº 1, Secretaría N° 2",
+            "Civil Y Comercial de la 2da. Nom.",
+            "Comercial N° 14, Secretaría N° 28",
+            "Comercial N° 13, Secretaría N° 25",
+            "Comercial N° 1, Secretaría N° 2",
+            "Juzg.1° Inst. Civil y Comercial 4, Distrito Judicial Centro",
+            "Civil y Comercial N° 5, Sec. N° 2",
+            "Comercial N° 6, Secretaría N° 12",
+            "Comercial N° 7, Secretaría N° 13",
+            "Civil y Comercial N° 26, Sec. N° 52",
+            "Civil y Comercial N° 5",
+            "Comercial N° 8, Secretaría N° 16",
+            "Civil y Comercial 9na. Nominación",
+            "Comercial N° 17, Secretaría N° 33",
+            "Comercial N° 15, Secretaría N° 30",
+            "Civil y Comercial N° 1",
+            "Civil y Comercial 7ma nominación",
+            "Comercial N° 8, Secretaría N° 15",
+            "Civil y Comercial N° 2, Sec. N° 3",
+            "Comercial N° 13, Secretaría N° 26",
+            "Comercial N° 21, Secretaría 41",
+            "Civil y Comerial de la 2a nom., Secretaría Nº 3",
+            "Comercial N° 25, Secretaría N° 49",
+            "Comercial N° 23, Secretaría N° 45",
+            "Civil y Comercial N° 2, Sec. Unica",
+            "Civil y Comercial N° 7",
+            "Comercial N° 9, Secretaría N° 17",
+            "Comercial N° 13, Secretaría 25",
+            "Comercial N° 8, Secretaría N° 16",
+            "Comercial N° 23, Secretaría N° 46",
+            "Comercial N° 1, Secretaría N° 2",
+            "Comercial N° 10, Secretaría N° 20",
+            "Juzg. de distrito de la 8a nominación",
+            "Comercial N° 26, Secretaría 51",
+            "Civil y Comercial 13 nominacion",
+            "Civil Y Comercial de la 10° Nom.",
+            "Comercial N° 2, Secretaría N° 4",
+            "Comercial N° 22, Secretaría N° 43",
+            "Comercial N° 1, Secretaría N° 1",
+            "Comercial N° 3, Secretaría N° 6",
+            "Comercial N° 26, Secretaría 51",
+            "Comercial N° 2, Secretaría N° 3",
+            "Comercial N° 19, Secretaría 38",
+            "Civil y Com 7ma nom., Sec.N° 4",
+            "Comercial N° 16, Secretaría N° 32",
+            "Comercial N° 6, Secretaría N° 11",
+            "Concursos y Registro N° 2",
+            "Comercial N° 3, Secretaría N° 5",
+            "Comercial Nº 8, Secretaría Nº 16",
+            "Juzg. de la 1° Inst.de 26 Nominación en lo Civil y Comercial de Concursos y Socie" +
+                "dades N° 2",
+            "Civil y Comercial 4ta nominación",
+            "Comercial N° 1, Secretaría N° 2",
+            "Comercial N° 25, Secretaría N° 49",
+            "Comercial N° 9, Secretaría N° 18",
+            "Comercial N° 4, Secretaría N° 7",
+            "Comercial N° 9, Secretaría 18",
+            "Comercial N° 7, Secretaría N° 14",
+            "Comercial N° 16, Secretaría N° 31",
+            "1ª Inst.Civily Com.Dist.15ª Nom.",
+            "Civil y Comercial 10ma. Nominación",
+            "Comercial N° 19, Secretaría 37",
+            "Comercial N° 17, Secretaría N° 33",
+            "Comercial N° 16, Secretaría N° 32",
+            "Comercial N° 6, Secretaría N° 12",
+            "N° 2 de Concursos",
+            "Comercial Nº 13, Secretaría N° 25",
+            "Comercial N° 9, Secretaría N° 17",
+            "Comercial N° 7, Secretaría N° 13",
+            "Comercial N° 9, Secretaría N° 17",
+            "Comercial N° 10, Secretaría N° 19",
+            "Civil y Comercial N° 7",
+            "Civil y Comercial N° 1, Sec. N° 2",
+            "Civil y Comercial N° 1",
+            "Civil y Comercial N° 1",
+            "Civil y Comercial N° 1",
+            "Comercial N° 1, Secretaría N° 1",
+            "Civil y Comercial 6ta Nominación",
+            "Comercial N° 2, Secretaría N° 4",
+            "Civil y Comercial N° 6, Secretaría 4",
+            "Comercial N° 22, Sec. N° 44",
+            "Comercial N° 12, Secretaría N° 24",
+            "Comercial N° 13, Secretaría N° 26",
+            "Comercial N° 1, Secretaría N° 2",
+            "Comercial N° 8, Secretaría N° 16",
+            "Comercial N° 7, Secretaría N° 14",
+            "Comercial N° 22, Secretaría N° 44",
+            "Comercial N° 4, Secretaría N° 8",
+            "Comercial N° 16, Secretaría N° 32",
+            "Comercial N° 18, Secretaría N° 35",
+            "Comercial N° 15, Secretaría N° 29",
+            "Comercial N° 8, Secretaría N° 16",
+            "Comercial N° 19, Secretaría N° 38",
+            "Comercial N° 1, Secretaría N° 2",
+            "Comercial N° 1, Secretaría N° 2",
+            "Comercial N° 10, Secretaría N° 19",
+            "Civil y Comercial N° 3",
+            "Comercial N° 25, Secretaría N° 49",
+            "Civil y Comercial 13 nominacion",
+            "Comercial N° 15, Secretaría N° 29",
+            "Comercial N° 24, Secretaría N° 48",
+            "Comercial N° 4, Secretaría N° 8",
+            "Comercial N° 4, Secretaría N° 7",
+            "Civil, Comercial y Especial N° 1",
+            "Comercial N° 23, Secretaría N° 45",
+            "Comercial N° 25, Secretaría N° 50",
+            "Comercial N° 26, Secretaría N° 52",
+            "Civil y Comercial 2 Nominación",
+            "Civil y Com. 7 Nom., N° 4, Sec. 13",
+            "Civil y Comercial 8va. nominación",
+            "Comercial N° 22, Secretaría N° 44",
+            "Comercial N° 15, Secretaría N° 29",
+            "Comercial N° 25, Secretaría N° 50",
+            "Comercial N° 7, Secretaría N° 14",
+            "Comercial N° 20, Secretaría N° 39",
+            "Comercial N° 5, Secretaría N° 9",
+            "Civil y Comercial 3ra. nominación",
+            "Comercial N° 3, Secretaría N° 5",
+            "Comercial N° 26, Secretaría N° 52",
+            "Civil y Comercial de la 2a Nominación",
+            "Comercial N° 26, Secretaría N° 52",
+            "Civil y Comercial 13 Nominación",
+            "Comercial N° 9, Secretaría N° 17",
+            "Comercial N° 2, Secretaría N° 4",
+            "Civil y Comercial N° 4",
+            "Comercial 23, Secretaría 45",
+            "Comercial 16, Secretaría 32",
+            "Comercial 13, Secretaría 26",
+            "Comercial 18, Secretaría 35",
+            "Comercial Nº 9, Secretaría 18",
+            "Comercial 17, Secretaría 33",
+            "Juzg. 1º Dist. De la 4ª Nom.",
+            "Comercial 8, Secretaría 16",
+            "Comercial 14, Secretaria 27",
+            "Comercial 31, Secretaría 61"});
+            this.cmbJuzg.Location = new System.Drawing.Point(95, 197);
+            this.cmbJuzg.Name = "cmbJuzg";
+            this.cmbJuzg.Size = new System.Drawing.Size(103, 21);
+            this.cmbJuzg.TabIndex = 31;
+            // 
             // frmRegistroDeProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1081, 421);
+            this.Controls.Add(this.cmbJuzg);
+            this.Controls.Add(this.cmbJurisdiccion);
+            this.Controls.Add(this.cmbLiquidador);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -273,13 +757,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.txtLiquidador);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtJurisdiccion);
             this.Controls.Add(this.txtApertura);
             this.Controls.Add(this.txtEntidad);
             this.Controls.Add(this.txtExpediente);
-            this.Controls.Add(this.txtJuzg);
             this.Controls.Add(this.dgvDatos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroDeProveedores";
@@ -295,13 +776,10 @@
 
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button btnGrabar;
-        private System.Windows.Forms.TextBox txtLiquidador;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtJurisdiccion;
         private System.Windows.Forms.TextBox txtApertura;
         private System.Windows.Forms.TextBox txtEntidad;
         private System.Windows.Forms.TextBox txtExpediente;
-        private System.Windows.Forms.TextBox txtJuzg;
         private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Entidad;
@@ -319,5 +797,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbLiquidador;
+        private System.Windows.Forms.ComboBox cmbJurisdiccion;
+        private System.Windows.Forms.ComboBox cmbJuzg;
     }
 }

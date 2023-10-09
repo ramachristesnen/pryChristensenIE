@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
@@ -22,17 +23,12 @@ namespace pryChristensenIE
             InitializeComponent();
         }
 
-        
-        
-
-        
         private void frmArchivoDeProveedores_Load(object sender, EventArgs e)
         {
             DirectoryInfo info = new DirectoryInfo(@"../../");
-            string ruta = info.FullName + "Proveedores";
-            CargarTreeView(ruta, "Proveedores");
+            string ruta = info.FullName + "Datos";
+            CargarTreeView(ruta, info.Name);
         }
-
         private void TraerCarpetasYArchivos(TreeNode NodoPadre, string ruta)
         {
             try
@@ -74,29 +70,30 @@ namespace pryChristensenIE
 
         private void twCarpetasProvedores_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-           
-        }
-
-        private void twCarpetasProvedores_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-          lblDatos.Text = "";
+            lblDatos.Text = "";
             try
             {
-                DirectoryInfo info = new DirectoryInfo(@"../..");
+                DirectoryInfo info = new DirectoryInfo(@"../../");
                 string RutaArchivo = info.FullName + "\\" + e.Node.FullPath;
-                StreamReader LectorArchivos = new StreamReader(RutaArchivo);
-                if (LectorArchivos != null)
+
+                if (File.Exists(RutaArchivo))
                 {
-                    while (!LectorArchivos.EndOfStream)
+                    using (StreamReader LectorArchivos = new StreamReader(RutaArchivo))
                     {
-                        lblDatos.Text += LectorArchivos.ReadLine();
+                        while (!LectorArchivos.EndOfStream)
+                        {
+                            lblDatos.Text += LectorArchivos.ReadLine();
+                        }
                     }
                 }
-                LectorArchivos.Close();
+                else
+                {
+                    MessageBox.Show("El archivo no existe.");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("No se pudo encontrar texto");
+                MessageBox.Show("Se produjo un error: " + ex.Message);
             }
         }
     }

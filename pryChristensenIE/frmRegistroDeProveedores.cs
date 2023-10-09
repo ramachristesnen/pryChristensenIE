@@ -66,7 +66,7 @@ namespace pryChristensenIE
             objetoEscribeArchivo.WriteLine(txtApertura.Text + ";" +
                 txtEntidad.Text + ";" + txtExpediente.Text + ";" +
                 txtNumero.Text + ";" + txtDireccion + ";" +
-                txtJuzg + ";" + txtJurisdiccion + ";" + txtLiquidador);
+                cmbJuzg.Text + ";" + cmbJurisdiccion.Text + ";" + cmbLiquidador.Text);
 
             objetoEscribeArchivo.Close();
 
@@ -75,10 +75,10 @@ namespace pryChristensenIE
             txtEntidad.Clear();
             txtApertura.Clear();
             txtExpediente.Clear();
-            txtJuzg.Clear();
-            txtJurisdiccion.Clear();
+            
+          
             txtDireccion.Clear();
-            txtLiquidador.Clear();
+            
         }
         private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -88,13 +88,18 @@ namespace pryChristensenIE
             txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtExpediente.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            cmbJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            cmbJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
             txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
-            txtLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
+            cmbLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
         }
 
         private void txtJurisdiccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
