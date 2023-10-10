@@ -51,6 +51,7 @@
             this.twCarpetasProvedores.Name = "twCarpetasProvedores";
             this.twCarpetasProvedores.Size = new System.Drawing.Size(225, 248);
             this.twCarpetasProvedores.TabIndex = 3;
+            this.twCarpetasProvedores.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.twCarpetasProvedores_AfterSelect);
             this.twCarpetasProvedores.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.twCarpetasProvedores_NodeMouseDoubleClick);
             // 
             // frmArchivoDeProveedores

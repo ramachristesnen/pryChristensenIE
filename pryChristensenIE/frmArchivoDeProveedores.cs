@@ -23,8 +23,8 @@ namespace pryChristensenIE
 
         private void frmArchivoDeProveedores_Load(object sender, EventArgs e)
         {
-            DirectoryInfo info = new DirectoryInfo(@"../../");
-            string ruta = info.FullName + "Datos";
+            DirectoryInfo info = new DirectoryInfo(@"../..");
+            string ruta = info.FullName + "\\Datos\\Proveedores";
             CargarTreeView(ruta, info.Name);
         }
         private void TraerCarpetasYArchivos(TreeNode NodoPadre, string ruta)
@@ -60,7 +60,7 @@ namespace pryChristensenIE
 
             if (Directory.Exists(RutaCarpetaRaiz))
             {
-                TreeNode NodoRaiz = new TreeNode(NombreCarpeta);
+                TreeNode NodoRaiz = new TreeNode("Proveedores");
                 twCarpetasProvedores.Nodes.Add(NodoRaiz);
                 TraerCarpetasYArchivos(NodoRaiz, RutaCarpetaRaiz);
             }
@@ -71,7 +71,7 @@ namespace pryChristensenIE
             lblDatos.Text = "";
             try
             {
-                DirectoryInfo info = new DirectoryInfo(@"../../");
+                DirectoryInfo info = new DirectoryInfo(@"../.."+"\\Datos");
                 string RutaArchivo = info.FullName + "\\" + e.Node.FullPath;
 
                 if (File.Exists(RutaArchivo))
@@ -86,13 +86,18 @@ namespace pryChristensenIE
                 }
                 else
                 {
-                    MessageBox.Show("El archivo no existe.");
+                    
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Se produjo un error: " + ex.Message);
             }
+        }
+
+        private void twCarpetasProvedores_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
         }
     }
 }

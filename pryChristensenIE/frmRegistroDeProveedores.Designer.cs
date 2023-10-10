@@ -55,6 +55,7 @@
             this.cmbLiquidador = new System.Windows.Forms.ComboBox();
             this.cmbJurisdiccion = new System.Windows.Forms.ComboBox();
             this.cmbJuzg = new System.Windows.Forms.ComboBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(36, 392);
+            this.btnGrabar.Location = new System.Drawing.Point(5, 392);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(117, 23);
             this.btnGrabar.TabIndex = 19;
@@ -738,12 +739,24 @@
             this.cmbJuzg.Size = new System.Drawing.Size(103, 21);
             this.cmbJuzg.TabIndex = 31;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(952, 392);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(117, 23);
+            this.btnLimpiar.TabIndex = 32;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // frmRegistroDeProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1081, 421);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cmbJuzg);
             this.Controls.Add(this.cmbJurisdiccion);
             this.Controls.Add(this.cmbLiquidador);
@@ -800,5 +813,6 @@
         private System.Windows.Forms.ComboBox cmbLiquidador;
         private System.Windows.Forms.ComboBox cmbJurisdiccion;
         private System.Windows.Forms.ComboBox cmbJuzg;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

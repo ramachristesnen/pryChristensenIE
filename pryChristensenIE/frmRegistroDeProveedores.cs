@@ -103,5 +103,13 @@ namespace pryChristensenIE
         {
 
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgvDatos.SelectedRows)
+            {
+                dgvDatos.Rows.Remove(row);
+            }
+        }
     }
 }
