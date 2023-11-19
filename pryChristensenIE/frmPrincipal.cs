@@ -30,5 +30,11 @@ namespace pryChristensenIE
             frmArchivoDeProveedores archivoDeProveedores = new frmArchivoDeProveedores();       
             archivoDeProveedores.ShowDialog();
         }
+
+        private void frToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInicioDeSesion frm = new frmInicioDeSesion();    
+            frm.ShowDialog();
+        }
     }
 }
