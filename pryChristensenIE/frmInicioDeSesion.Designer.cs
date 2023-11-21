@@ -38,11 +38,11 @@
             // 
             // btnRegistrarse
             // 
-            this.btnRegistrarse.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrarse.BackColor = System.Drawing.Color.Black;
             this.btnRegistrarse.CausesValidation = false;
             this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrarse.Location = new System.Drawing.Point(167, 176);
+            this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRegistrarse.Location = new System.Drawing.Point(167, 197);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(192, 46);
             this.btnRegistrarse.TabIndex = 11;
@@ -52,14 +52,14 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(167, 85);
+            this.txtContraseña.Location = new System.Drawing.Point(167, 73);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(192, 20);
             this.txtContraseña.TabIndex = 10;
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(167, 40);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(167, 26);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(192, 20);
             this.txtNombreUsuario.TabIndex = 9;
@@ -68,7 +68,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 88);
+            this.label2.Location = new System.Drawing.Point(3, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 8;
@@ -78,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 43);
+            this.label1.Location = new System.Drawing.Point(3, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 15);
             this.label1.TabIndex = 7;
@@ -88,8 +88,8 @@
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(167, 128);
+            this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(167, 121);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(192, 42);
             this.btnIniciarSesion.TabIndex = 6;
@@ -101,7 +101,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 263);
+            this.BackgroundImage = global::pryChristensenIE.Properties.Resources.logo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(380, 276);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtNombreUsuario);
