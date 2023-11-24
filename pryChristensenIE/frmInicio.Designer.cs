@@ -57,6 +57,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boston Seguros";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);

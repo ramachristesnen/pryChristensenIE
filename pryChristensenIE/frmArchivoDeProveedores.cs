@@ -24,7 +24,7 @@ namespace pryChristensenIE
         private void frmArchivoDeProveedores_Load(object sender, EventArgs e)
         {
             DirectoryInfo info = new DirectoryInfo(@"../..");
-            string ruta = info.FullName + "\\Datos\\Proveedores";
+            string ruta = info.FullName + "\\Archivos\\Proveedores";
             CargarTreeView(ruta, info.Name);
         }
         private void TraerCarpetasYArchivos(TreeNode NodoPadre, string ruta)
@@ -71,7 +71,7 @@ namespace pryChristensenIE
             lblDatos.Text = "";
             try
             {
-                DirectoryInfo info = new DirectoryInfo(@"../.."+"\\Datos");
+                DirectoryInfo info = new DirectoryInfo(@"../.."+"\\Archivos");
                 string RutaArchivo = info.FullName + "\\" + e.Node.FullPath;
 
                 if (File.Exists(RutaArchivo))

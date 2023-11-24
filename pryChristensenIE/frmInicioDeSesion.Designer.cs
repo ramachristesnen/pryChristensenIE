@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicioDeSesion));
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
@@ -55,14 +56,14 @@
             this.txtContraseña.Location = new System.Drawing.Point(167, 85);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(192, 20);
-            this.txtContraseña.TabIndex = 10;
+            this.txtContraseña.TabIndex = 2;
             // 
             // txtNombreUsuario
             // 
             this.txtNombreUsuario.Location = new System.Drawing.Point(167, 40);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(192, 20);
-            this.txtNombreUsuario.TabIndex = 9;
+            this.txtNombreUsuario.TabIndex = 1;
             // 
             // label2
             // 
@@ -92,15 +93,18 @@
             this.btnIniciarSesion.Location = new System.Drawing.Point(167, 128);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(192, 42);
-            this.btnIniciarSesion.TabIndex = 6;
+            this.btnIniciarSesion.TabIndex = 3;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // frmInicioDeSesion
             // 
+            this.AcceptButton = this.btnIniciarSesion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::pryChristensenIE.Properties.Resources.logo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(362, 263);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.txtContraseña);
@@ -108,8 +112,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIniciarSesion);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicioDeSesion";
             this.Text = "Inicio De Sesion";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmInicioDeSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

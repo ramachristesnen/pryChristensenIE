@@ -36,7 +36,7 @@ namespace pryChristensenIE
 
             rutaArchivo = informacionCarpetas.FullName;
 
-            rutaArchivo += "\\basedatos\\Listado de aseguradores.csv";
+            rutaArchivo += "\\Archivos\\Listado de aseguradores.csv";
 
             objetoLectorArchivo = new StreamReader(rutaArchivo);
 
@@ -59,7 +59,7 @@ namespace pryChristensenIE
 
             rutaArchivo = informacionCarpetas.FullName;
 
-            rutaArchivo += "\\basedatos\\Listado de aseguradores.csv";
+            rutaArchivo += "\\Archivos\\Listado de aseguradores.csv";
 
             objetoEscribeArchivo = new StreamWriter(rutaArchivo, true);
 
@@ -76,18 +76,16 @@ namespace pryChristensenIE
             txtApertura.Clear();
             txtExpediente.Clear();
             
-          
             txtDireccion.Clear();
             
         }
         private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
 
+            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtExpediente.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
             cmbJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
             cmbJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
             txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();

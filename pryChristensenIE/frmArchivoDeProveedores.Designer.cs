@@ -65,6 +65,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmArchivoDeProveedores";
             this.Text = "Archivo De Proveedores";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmArchivoDeProveedores_Load);
             this.ResumeLayout(false);
 

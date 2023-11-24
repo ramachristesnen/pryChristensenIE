@@ -64,7 +64,7 @@
             this.txtNumero.Location = new System.Drawing.Point(95, 21);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(103, 20);
-            this.txtNumero.TabIndex = 20;
+            this.txtNumero.TabIndex = 1;
             // 
             // btnGrabar
             // 
@@ -72,7 +72,7 @@
             this.btnGrabar.Location = new System.Drawing.Point(5, 392);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(117, 23);
-            this.btnGrabar.TabIndex = 19;
+            this.btnGrabar.TabIndex = 11;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
@@ -82,28 +82,28 @@
             this.txtDireccion.Location = new System.Drawing.Point(95, 283);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(103, 20);
-            this.txtDireccion.TabIndex = 17;
+            this.txtDireccion.TabIndex = 7;
             // 
             // txtApertura
             // 
             this.txtApertura.Location = new System.Drawing.Point(95, 109);
             this.txtApertura.Name = "txtApertura";
             this.txtApertura.Size = new System.Drawing.Size(103, 20);
-            this.txtApertura.TabIndex = 15;
+            this.txtApertura.TabIndex = 3;
             // 
             // txtEntidad
             // 
             this.txtEntidad.Location = new System.Drawing.Point(95, 66);
             this.txtEntidad.Name = "txtEntidad";
             this.txtEntidad.Size = new System.Drawing.Size(103, 20);
-            this.txtEntidad.TabIndex = 14;
+            this.txtEntidad.TabIndex = 2;
             // 
             // txtExpediente
             // 
             this.txtExpediente.Location = new System.Drawing.Point(95, 151);
             this.txtExpediente.Name = "txtExpediente";
             this.txtExpediente.Size = new System.Drawing.Size(103, 20);
-            this.txtExpediente.TabIndex = 13;
+            this.txtExpediente.TabIndex = 4;
             // 
             // dgvDatos
             // 
@@ -401,7 +401,7 @@
             this.cmbLiquidador.Location = new System.Drawing.Point(93, 330);
             this.cmbLiquidador.Name = "cmbLiquidador";
             this.cmbLiquidador.Size = new System.Drawing.Size(105, 21);
-            this.cmbLiquidador.TabIndex = 29;
+            this.cmbLiquidador.TabIndex = 8;
             this.cmbLiquidador.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // cmbJurisdiccion
@@ -569,7 +569,7 @@
             this.cmbJurisdiccion.Location = new System.Drawing.Point(95, 243);
             this.cmbJurisdiccion.Name = "cmbJurisdiccion";
             this.cmbJurisdiccion.Size = new System.Drawing.Size(103, 21);
-            this.cmbJurisdiccion.TabIndex = 30;
+            this.cmbJurisdiccion.TabIndex = 6;
             // 
             // cmbJuzg
             // 
@@ -737,7 +737,7 @@
             this.cmbJuzg.Location = new System.Drawing.Point(95, 197);
             this.cmbJuzg.Name = "cmbJuzg";
             this.cmbJuzg.Size = new System.Drawing.Size(103, 21);
-            this.cmbJuzg.TabIndex = 31;
+            this.cmbJuzg.TabIndex = 5;
             // 
             // btnLimpiar
             // 
@@ -752,6 +752,7 @@
             // 
             // frmRegistroDeProveedores
             // 
+            this.AcceptButton = this.btnGrabar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -777,7 +778,8 @@
             this.Controls.Add(this.dgvDatos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroDeProveedores";
-            this.Text = "frmRegistroDeProveedores";
+            this.Text = "Registro De Proveedores";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmRegistroDeProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
