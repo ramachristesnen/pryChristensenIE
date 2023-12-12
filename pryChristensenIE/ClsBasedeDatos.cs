@@ -20,7 +20,7 @@ namespace pryChristensenIE
         OleDbDataReader lectorBD; // Mantenemos el campo lectorBD
         OleDbDataAdapter adaptadorDS;
         DataSet objDataSet = new DataSet();
-
+        public string EstadoConexion;
         public ClsBasedeDatos()
         {
             estadoConexion = false;
@@ -30,9 +30,16 @@ namespace pryChristensenIE
 
         public void ConectarBaseDatos()
         {
-            conexionBD = new OleDbConnection(cadenaConexion);
-            conexionBD.Open();
-            estadoConexion = true;
+            
+            
+                conexionBD = new OleDbConnection(cadenaConexion);
+                conexionBD.Open();
+                estadoConexion = true;
+               
+            
+            
+            
+   
         }
 
         public bool ValidarUsuarios(String Usuario, String Contraseña)
